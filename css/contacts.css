@@ -1,0 +1,87 @@
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container {
+    max-width: 1840px;
+    padding: 0px 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__contact {}
+
+.contact {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    width: 100%;
+    background-color: #1a1919;
+    padding: 20px;
+    border-radius: 10px
+}
+
+.contact__avatar {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    min-width: 300px;
+}
+
+.contact__nickname {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.contact__button {
+    background-color: #fff;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    max-width: 300px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 0px 0px 30px #ffffffb4;
+    transition: .3s;
+    gap: 10px;
+    font-weight: 400;
+}
+
+.contact__button:hover {
+    scale: 1.02;
+}
+
+@media (max-width: 635px) {
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact__info {
+        min-width: 0px;
+        width: 100%;
+    }
+}

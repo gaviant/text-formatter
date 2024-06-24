@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/substring-checker.css" rel="stylesheet">
+    <link href="../css/burger-menu.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <script src="../js/burger-menu.js" defer></script>
+    <script src="../js/substring-checker.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <title>
+        Formatter&nbsp;&mdash;edit your text online!
+    </title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="../index.html" class="header__logo">
+                    Formatter
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__menu menu">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__item-link">
+                                ГЛАВНАЯ
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="tools.html" class="menu__item-link">
+                                ИНСТРУМЕНТЫ
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="../contacts.html" class="menu__item-link">
+                                КОНТАКТЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="burger__menu"></span>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="back-button">
+                    <svg class="back-button__icon" width="10" fill="none" viewBox="0 0 15 23"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.3158 1.57886L2 11.842L14.3158 22.1052" stroke-linejoin="round" stroke-width="2px">
+                        </path>
+                    </svg>
+                    <span class="back-button__text">Назад</span>
+                </div>
+                <div class="main__content">
+                    <h1 class="main__title">
+                        Проверка на подстроку
+                    </h1>
+                    <div class="tools__container">
+                        <textarea id="stringInput" rows="10" class="tools__textarea"
+                            placeholder="Введите текст..."></textarea>
+                        <textarea id="substringInput" rows="10" class="tools__textarea"
+                            placeholder="Введите подстроку..."></textarea>
+                    </div>
+                    <div class="result__container">
+                        <span class="result-name">
+                            Количество вхождений подстроки
+                        </span>
+                        <span class="result-count">
+                            0
+                        </span>
+                    </div>
+                    <button class="main__button" id="substringButton">
+                        Проверить
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/pincode-generator.css" rel="stylesheet">
+    <link href="../css/burger-menu.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <script src="../js/burger-menu.js" defer></script>
+    <script src="../js/pincode-generator.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <title>
+        Formatter&nbsp;&mdash;edit your text online!
+    </title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="../index.html" class="header__logo">
+                    Formatter
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__menu menu">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__item-link">
+                                ГЛАВНАЯ
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="tools.html" class="menu__item-link">
+                                ИНСТРУМЕНТЫ
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__item-link">
+                                КОНТАКТЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="burger__menu"></span>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="back-button">
+                    <svg class="back-button__icon" width="10" fill="none" viewBox="0 0 15 23"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.3158 1.57886L2 11.842L14.3158 22.1052" stroke-linejoin="round" stroke-width="2px">
+                        </path>
+                    </svg>
+                    <span class="back-button__text">Назад</span>
+                </div>
+                <div class="main__content">
+                    <h1 class="main__title">
+                        Генератор пинкодов
+                    </h1>
+                    <div class="tools__container">
+                        <input type="range" id="range" class="tools__range" min="3" max="24">
+                    </div>
+                    <div class="tools__settings-result">
+                        <div class="settings">
+                            <h2 class="settings__title">
+                                Длина
+                            </h2>
+                            <input type="text" class="settings__input" id="lengthInput">
+                        </div>
+                        <div class="result__container">
+                            <div class="notification">
+                                Скопировано!
+                            </div>
+                            <h2 class="result__title">
+                                Пинкод
+                            </h2>
+                            <span class="generated-pincode">
+                                <span class="pincode">123234</span>
+                                <span class="copy-icon"><img src="../img/cliboard-icon.svg" alt=""
+                                        class="clip-icon"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <button class="main__button" id="getResultButton">
+                        Сгенерировать
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
